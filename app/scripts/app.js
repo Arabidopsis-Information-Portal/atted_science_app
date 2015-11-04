@@ -28,6 +28,8 @@
   form.on('submit', function(e) {
     e.preventDefault();
 
+    // start progress bar and tab spinners
+    $('#progress_region', appContext).removeClass('hidden');
     var Agave = window.Agave;
 
     // clear error messages
@@ -63,8 +65,9 @@
     }
 
     Agave.api.adama.getStatus({}, function(resp) {
+      $('#progress_region', appContext).addClass('hidden');
       if (resp.obj.status === 'success') {
-        Agave.api.adama.search(
+          Agave.api.adama.search(
           {'namespace': 'atted', 'service': 'atted_coexpressed_by_locus_v2.1', 'queryParams': query},
           function(search) {
             $('.results', appContext).empty().html(templates.resultTable({
@@ -98,9 +101,10 @@
 
  // When the reset button is called
     $('#reset-coexpression', appContext).on('click', function() {
+      $('#progress_region', appContext).addClass('hidden');
     	$('#genes', appContext).html('');
     });
-    
+
   });
 
 })(window, jQuery, _);
