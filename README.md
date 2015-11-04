@@ -48,6 +48,6 @@ When you are ready you can upload your application to the
 [AIP Science Apps Workspace](http://www.araport.org/apps).
 
 ** More details coming soon! **
-=======
+
 
 
