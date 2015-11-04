@@ -30,6 +30,44 @@
     </div>
   </form>
 
-  <div class="results">
-  </div>
+  <!-- Navigation tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+  
+  	<!-- About tab -->
+    <li role="presentation" class="active">
+      <a href="#aboutTab" aria-controls="about" role="tab" data-toggle="tab">
+        About
+      </a>
+    </li>
+    
+     <!-- Correlation Data tab -->
+    <li role="presentation">
+      <a href="#correlationTab" aria-controls="correlation" role="tab" data-toggle="tab">
+        Coexpression Data
+      </a>
+    </li>
+    
+  </ul>
+  
+  <!-- Tab content -->
+  <div class="tab-content">
+
+    <!-- About tab -->
+    <div role="tabpanel" class="tab-pane fade in active" id="aboutTab">
+    	
+    	<h4>This app displays table gene coexpression data, obtained from Atted-II.</h4>
+      
+    </div> <!-- Close #aboutTab -->
+        
+    <!-- Data tables -->
+    
+    <div role="tabpanel" class="tab-pane fade" id="correlationTab">
+    
+      <h3>Please search for a locus ID.</h3>
+       	<div class="results">
+  		</div> 
+    </div> <!-- Close #correlationTab -->
+  
+  </div> <!-- Close .tab-content -->
+  
 </div>
