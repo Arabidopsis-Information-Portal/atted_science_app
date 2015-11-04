@@ -96,6 +96,11 @@
       }
     });
 
+ // When the reset button is called
+    $('#reset-coexpression', appContext).on('click', function() {
+    	$('#genes', appContext).html('');
+    });
+    
   });
 
 })(window, jQuery, _);
