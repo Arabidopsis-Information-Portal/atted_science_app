@@ -65,7 +65,7 @@
     Agave.api.adama.getStatus({}, function(resp) {
       if (resp.obj.status === 'success') {
         Agave.api.adama.search(
-          {'namespace': 'aip', 'service': 'atted_coexpressed_by_locus_v0.1', 'queryParams': query},
+          {'namespace': 'atted', 'service': 'atted_coexpressed_by_locus_v2.1', 'queryParams': query},
           function(search) {
             $('.results', appContext).empty().html(templates.resultTable({
               result: search.obj.result,
@@ -79,7 +79,7 @@
               locus = btn.attr('data-locus');
 
               Agave.api.adama.search(
-                {'namespace': 'aip', 'service': 'locus_gene_report_v0.1', 'queryParams': {'locus': locus}},
+                {'namespace': 'aip', 'service': 'locus_gene_report_v0.2.0', 'queryParams': {'locus': locus}},
                 function(search) {
                   $(templates.geneReport(search.obj.result[0])).appendTo('body').modal();
                 }
