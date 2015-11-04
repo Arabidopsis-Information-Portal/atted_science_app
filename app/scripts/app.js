@@ -66,6 +66,7 @@
 
     Agave.api.adama.getStatus({}, function(resp) {
       $('#progress_region', appContext).addClass('hidden');
+      $('a[href="#correlationTab"]', appContext).tab('show');
       if (resp.obj.status === 'success') {
           Agave.api.adama.search(
           {'namespace': 'atted', 'service': 'atted_coexpressed_by_locus_v2.1', 'queryParams': query},
@@ -101,6 +102,7 @@
 
  // When the reset button is called
     $('#reset-coexpression', appContext).on('click', function() {
+      $('#wt_locus', appContext).val('');
       $('#progress_region', appContext).addClass('hidden');
     	$('#genes', appContext).html('');
     });
