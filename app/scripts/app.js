@@ -102,7 +102,6 @@
 
  // When the reset button is called
     $('#reset-coexpression', appContext).on('click', function() {
-      $('#wt_locus', appContext).val('');
       $('#progress_region', appContext).addClass('hidden');
     	$('#genes', appContext).html('');
     });
