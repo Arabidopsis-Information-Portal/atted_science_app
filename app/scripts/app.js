@@ -83,14 +83,14 @@
               locus = btn.attr('data-locus');
 
               Agave.api.adama.search(
-                {'namespace': 'aip', 'service': 'locus_gene_report_v0.2.0', 'queryParams': {'locus': locus}},
+                {'namespace': 'araport', 'service': 'locus_gene_report_v0.2.0', 'queryParams': {'locus': locus}},
                 function(search) {
                   $(templates.geneReport(search.obj.result[0])).appendTo('body').modal();
                 }
               );
             });
 
-            $('.results table', appContext).dataTable({
+            $('.results table', appContext).DataTable({
               'order': [[ 2, 'desc' ]]
             });
           });

@@ -2,7 +2,8 @@
   "name": "workshop-tutorial",
   "private": true,
   "dependencies": {
-    "DataTables": "~1.10.3",
+    "datatables.net": "^1.10.12",
+    "datatables.net-bs": "^1.10.12",
     "underscore": "~1.7.0"
   }
 }
