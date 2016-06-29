@@ -1,23 +1,24 @@
 <!doctype html>
 <html>
 <head>
-  <title>workshop tutorial | AIP Science Apps | Test Runner</title>
+  <title>protein-app | AIP Science Apps | Test Runner</title>
   <link rel="shortcut icon" href="https://www.araport.org/sites/all/themes/custom/araport-theme/favicon.ico">
 
   <!-- jquery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
   <!-- bootstrap 3 -->
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   <!-- fontawesome -->
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.css" />
   <!-- endbower-->
-
+  <!-- araport_dep:css -->
+  <link rel="stylesheet" href="app/styles/app.css" />
+  <!-- endaraport_dep -->
   <style type="text/css">
   body {
     padding-top: 60px;
@@ -25,7 +26,6 @@
   </style>
 
   <!-- application styles -->
-  <link rel="stylesheet" type="text/css" href="/app/styles/app.css">
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -64,7 +64,9 @@
   </div>
 
   <div class="aip-science-app container">
-    include "/app/app.html"
+  <!-- araport_dep:html -->
+  include "/app/app.html"
+  <!-- endaraport_dep -->
   </div>
 
   <!-- swagger-js -->
@@ -75,12 +77,11 @@
   <script src="/lib/test-runner.js"></script>
 
   <!-- bower:js -->
-  <script src="bower_components/datatables.net/js/jquery.dataTables.js"></script>
-  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.js"></script>
-  <script src="bower_components/underscore/underscore.js"></script>
   <!-- endbower -->
+  <!-- araport_dep:js -->
+  <script src="app/scripts/app.js"></script>
+  <!-- endaraport_dep -->
 
   <!-- application code -->
-  <script src="/app/scripts/app.js"></script>
 </body>
 </html>

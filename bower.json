@@ -1,5 +1,5 @@
 {
-  "name": "workshop-tutorial",
+  "name": "atted-app",
   "private": true,
   "dependencies": {
     "datatables.net": "^1.10.12",

@@ -1,0 +1,16 @@
+{
+  "namespace" : "atted-app",
+  "name": "ATTED Co-expression App",
+  "description": "Display gene co-expression data (in table format) obtained from ATTED-II.",
+  "html": "app.html",
+  "scripts": [
+    "scripts/app.js"
+  ],
+  "styles": [
+    "styles/app.css"
+  ],
+  "tags": [
+    "arabidopsis", "gene", "expression", "co-expression"
+  ],
+  "icon": "app/images/logo.gif"
+}
